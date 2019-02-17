@@ -2,6 +2,10 @@
 Date    : 17/02/2019
 Version : v3.0.1
 
+# Linux Mint 19.1
+
+![Screenshots](https://i.imgur.com/ZbgERgK.jpg)
+
 # What is i3wm?
 
 I3 = [improved tiling windows manager](https://i3wm.org/) and this is its base of operations. Follow the link for more information.
@@ -28,11 +32,7 @@ When you follow these movies/articles and the installation scripts on github, yo
 
 Checkout the installation articles on http://erikdubois.be/category/linux/i3/installation-of-i3/ and follow the instructions to come to these results.
 
-# Linux Mint 19.1 Mate
-
-
-![Screenshots](https://i.imgur.com/ZbgERgK.jpg)
-
+# Old screenshots
 
 # Linux Mint 18.2 Sonya Cinnamon booted into i3
 
