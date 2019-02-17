@@ -91,6 +91,21 @@ sudo apt-get install -y nitrogen
 # chromium
 sudo apt-get install -y chromium-browser
 
+# neofetch
+sudo apt-get install -y neofetch
+
+# screenkey
+sudo apt-get install -y screenkey
+
+# simplescreenrecorder
+sudo apt-get install -y simplescreenrecorder
+
+# sublime-text
+sudo apt-get install -y sublime-text
+
+# variety
+sudo apt-get install -y variety
+
 # playerctl for music
 #https://github.com/acrisci/playerctl/releases
     if hash playerctl 2>/dev/null; then
