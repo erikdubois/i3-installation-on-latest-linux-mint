@@ -29,7 +29,7 @@ When you follow these movies/articles and the installation scripts on github, yo
 Checkout the installation articles on http://erikdubois.be/category/linux/i3/installation-of-i3/ and follow the instructions to come to these results.
 
 
-#Linux Mint 18.2 Sonya Cinnamon booted into i3
+# Linux Mint 18.2 Sonya Cinnamon booted into i3
 
 
 ![Screenshots](http://i.imgur.com/nJ1Lvg9.jpg)
