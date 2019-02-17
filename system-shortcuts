@@ -18,7 +18,7 @@ conky.config = {
 	cpu_avg_samples = 2,
 	default_color = 'FFFFFF',
 	double_buffer = true,
-	font = 'Noto Mono:size=11:bold',
+	font = 'Noto Mono:size=10',
 	gap_x = 25,
 	gap_y = 55,
 	minimum_width = 250,
@@ -33,7 +33,7 @@ conky.config = {
 	own_window_type = 'override',
 	update_interval = 1.0,
 	use_xft = true,
-	color1 = 'EEEEEE',
+	color1 = 'FE5E52',
 	color2 = 'eeeeee',
 	color3 = '0000ff',
 }
