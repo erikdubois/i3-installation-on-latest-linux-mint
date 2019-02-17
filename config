@@ -395,7 +395,7 @@ for_window [class="Spotify"] move to workspace 10
 #exec --no-startup-id vivaldi-snapshot
 exec --no-startup-id chromium-browser
 #for_window [class="Vivaldi-snapshot"] focus
-for_window [class="Chromium-browser"] focus
+#for_window [class="Chromium-browser"] focus
 
 #text-editor
 #exec --no-startup-id geany

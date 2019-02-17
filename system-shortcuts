@@ -33,7 +33,7 @@ conky.config = {
 	own_window_type = 'override',
 	update_interval = 1.0,
 	use_xft = true,
-	color1 = 'FE5E52',
+	color1 = 'EEEEEE',
 	color2 = 'eeeeee',
 	color3 = '0000ff',
 }

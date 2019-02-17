@@ -152,7 +152,7 @@ esac
 
 # define the github here, just last part
 
-GITHUB=LinuxMint182i3
+GITHUB=i3-installation-on-latest-linux-mint
 
 echo "################################################################"
 echo "Checking if /tmp folder is clean"

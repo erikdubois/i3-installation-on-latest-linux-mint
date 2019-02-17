@@ -23,9 +23,6 @@ sh applications/install-simplescreenrecorder-v1.sh
 
 sh applications/install-vivaldi-snapshot-v1.sh
 
-sh applications/install-zsh-v1.sh
-
-
 
 echo "#########################################################"
 echo "Applications have been  installed"
