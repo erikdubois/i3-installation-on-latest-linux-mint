@@ -1,0 +1,16 @@
+--2019-02-17 15:15:42--  https://github.com/acrisci/playerctl/releases/download/v0.5.0/playerctl-0.5.0_amd64.deb
+Resolving github.com (github.com)... 140.82.118.3, 140.82.118.4
+Connecting to github.com (github.com)|140.82.118.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/18788804/e7a9300c-0428-11e6-8ab9-bca7e9a72c76?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190217T141542Z&X-Amz-Expires=300&X-Amz-Signature=62363de4391afbb5566a768ea7287560e4278197eaf356b2b551742037bf4fdb&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dplayerctl-0.5.0_amd64.deb&response-content-type=application%2Foctet-stream [following]
+--2019-02-17 15:15:42--  https://github-production-release-asset-2e65be.s3.amazonaws.com/18788804/e7a9300c-0428-11e6-8ab9-bca7e9a72c76?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190217T141542Z&X-Amz-Expires=300&X-Amz-Signature=62363de4391afbb5566a768ea7287560e4278197eaf356b2b551742037bf4fdb&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dplayerctl-0.5.0_amd64.deb&response-content-type=application%2Foctet-stream
+Resolving github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)... 52.217.1.52
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.217.1.52|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 285908 (279K) [application/octet-stream]
+Saving to: ‘/tmp/playerctl’
+
+/tmp/playerctl      100%[===================>] 279,21K   664KB/s               /tmp/playerctl      100%[===================>] 279,21K   664KB/s    in 0,4s    
+
+2019-02-17 15:15:43 (664 KB/s) - ‘/tmp/playerctl’ saved [285908/285908]
+

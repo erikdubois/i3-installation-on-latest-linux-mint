@@ -1,0 +1,141 @@
+#=====================================================================================
+#                               aurora
+# Date    : 21/07/2017
+# Version : v2.0.1
+# Author  : Erik Dubois at http://www.erikdubois.be
+# License : Distributed under the terms of GNU GPL version 2 or later
+# Documentation English: http://erikdubois.be/linux/install-conky-theme-aurora
+# Documentation Dutch: http://erikdubois.be/linux/conky
+#======================================================================================
+
+#======================================================================================
+#
+# Source : https://plus.google.com/+RobertPartridge/ and
+# https://plus.google.com/u/0/+ThomasThompson/
+# Your work has been put to good use
+#======================================================================================
+
+###Settings###
+background yes
+cpu_avg_samples 1
+default_bar_size 100 8
+default_graph_size 200 100
+diskio_avg_samples 10
+double_buffer yes
+extra_newline no
+if_up_strictness address
+net_avg_samples 1
+no_buffers yes
+temperature_unit celsius
+text_buffer_size 2048
+short_units yes
+update_interval 1
+###End Settings###
+
+###Position###
+alignment middle_right
+gap_x 40
+gap_y 20
+minimum_size 300 740
+maximum_width 300
+###End Position###
+
+###Borders###
+border_inner_margin 0
+border_outer_margin 10
+border_width 0
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+###End Borders###
+
+###Window###
+own_window yes
+own_window_argb_value 100
+own_window_argb_visual no
+
+#own_window_class systemConky
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+#all options for own_window_type are normal, desktop, dock, panel or override
+own_window_type override
+own_window_transparent yes
+
+###End Window###
+
+###Font###
+max_text_width 0
+override_utf8_locale yes
+uppercase yes
+use_spacer none
+use_xft yes
+xftfont Ubuntu:size=8
+xftalpha 0.9
+###End Font###
+
+###Defining Colors###
+default_color FFFFFF
+default_outline_color 000000
+default_shade_color 000000
+color1 FFA726
+color2 dddddd
+color3 aaaaaa
+color4 888888
+color5 CCCCCC
+color6 FFFFFF
+###End Color###
+
+
+
+
+TEXT
+${color2}${voffset 4}${font Ubuntu:size=20}${alignc}${time %l}:${time %M} ${time %p}${font}
+${voffset 4}${font Ubuntu:size=12}${alignc}${time %A} ${time %B} ${time %e}, ${time %Y}${font}
+
+${font Ubuntu:size=10}${voffset 2}S Y S T E M   ${hr 2}${font}
+${color1}${voffset 8}Distro:${alignr}${execi 6000 lsb_release -d | grep 'Descr'|awk {'print $2 " " $3" " $4" " $5'}}${color2}
+${color1}Kernel: ${color}${color}${alignr}${exec uname} ${exec uname -r}
+${color1}#Nvidia: ${color}${alignr}${execp  nvidia-smi --query-supported-clocks=gpu_name --format=csv,noheader}
+#Nvidia Driver: ${color}${alignr}${execi 60000 nvidia-smi | grep "Driver Version"| awk {'print $3'}}
+${color1}Uptime: ${color}${alignr}${uptime}
+${color1}Hostname: ${color}${alignr}${nodename}
+
+${color2}${font Ubuntu:size=10}P R O C E S S O R S  ${hr 2}${font}${color}
+
+${color1}CPU Freq: ${color}$alignr${freq}MHz
+${color1}CPU Temp: ${color}$alignr${execi 10 sensors | grep 'Core 0' | awk {'print $3'}}
+${color1}History: ${color}${alignr}${cpugraph 8,100}
+
+${font StyleBats:size=20}A${font}${offset 8}${voffset -12}${color1}CPU Core 1: ${color2}${alignr}${offset -10}${cpu cpu1}%${alignr}${cpubar cpu1}
+${offset 30}${color1}CPU Core 2: ${color2}${alignr}${offset -10}${cpu cpu2}%${alignr}${cpubar cpu2}
+
+${color1}Top Processes${alignr}  proc id       cpu%      mem%    ${color}${color2}
+${voffset 4}     1  -  ${top name 1}${alignr}${goto 170}${top pid 1} ${goto 222}${top cpu 1} ${goto 274}${top mem 1}
+     2  -  ${top name 2}${alignr}${goto 170}${top pid 2} ${goto 222}${top cpu 2} ${goto 274}${top mem 2}
+     3  -  ${top name 3}${alignr}${goto 170}${top pid 3} ${goto 222}${top cpu 3} ${goto 274}${top mem 3}
+     4  -  ${top name 4}${alignr}${goto 170}${top pid 4} ${goto 222}${top cpu 4} ${goto 274}${top mem 4}
+     5  -  ${top name 5}${alignr}${goto 170}${top pid 5} ${goto 222}${top cpu 5} ${goto 274}${top mem 5}
+
+${font Ubuntu:size=10}M E M O R Y   ${hr 2}${font}
+
+${font StyleBats:size=20}m${font}${offset 8}${voffset -12}${color1}RAM: ${color2}${alignr}${offset -10}${mem} / ${memmax}${alignr}${membar}
+${offset 30}${color1}Swap: ${color2}${alignr}${offset -10}${swap} / ${swapmax}${alignr}${swapbar}
+
+${color1}Top Processes${alignr}  proc id       cpu%      mem%     ${color2}
+${voffset 4}     1  -  ${top_mem name 1}${alignr}${goto 170}${top_mem pid 1} ${goto 222}${top_mem cpu 1} ${goto 274}${top_mem mem 1}
+     2  -  ${top_mem name 2}${alignr}${goto 170}${top_mem pid 2} ${goto 222}${top_mem cpu 2} ${goto 274}${top_mem mem 2}
+     3  -  ${top_mem name 3}${alignr}${goto 170}${top_mem pid 3} ${goto 222}${top_mem cpu 3} ${goto 274}${top_mem mem 3}
+     4  -  ${top_mem name 4}${alignr}${goto 170}${top_mem pid 4} ${goto 222}${top_mem cpu 4} ${goto 274}${top_mem mem 4}
+     5  -  ${top_mem name 5}${alignr}${goto 170}${top_mem pid 5} ${goto 222}${top_mem cpu 5} ${goto 274}${top_mem mem 5}
+
+${font Ubuntu:size=10}D R I V E S   ${hr 2}${font}
+
+${font StyleBats:size=20}e${font}${offset 8}${voffset -12}${color1}Root  -  SSD: ${color2}${alignr}${offset -10}${fs_used /} / ${fs_size /}${alignr}${fs_bar /}
+${offset 30}${color1}I/O Read: ${color2}${alignr}${offset -10}${diskio_read /dev/sda1}${alignr}${diskiograph_read sda1 8,100}
+${offset 30}${color1}I/O Write: ${color2}${alignr}${offset -10}${diskio_write /dev/sda1}${alignr}${diskiograph_write sda1 8,100}
+
+
+${font Ubuntu:size=10}N E T W O R K   ${hr 2}${font}
+
+${font StyleBats:size=20}q${font}${offset 8}${voffset -12}${color1}Network Up: ${color2}${alignr}${offset -10$}${upspeed enp2s0}${alignr}${upspeedgraph enp2s0 8,100}
+${offset 30}${color1}Network Down: ${color2}${alignr}${offset -10$}${downspeed enp2s0}${alignr}${downspeedgraph enp2s0 8,100}

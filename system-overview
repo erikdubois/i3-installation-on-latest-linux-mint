@@ -1,0 +1,63 @@
+--[[
+#=====================================================================================
+#                               aureola
+# Date    : 21/07/2017
+# Version : v2.0.1
+# Author  : Erik Dubois at http://www.erikdubois.be
+# License : Distributed under the terms of GNU GPL version 2 or later
+# Documentation : http://erikdubois.be/category/linux/aureola/
+#======================================================================================
+]]
+
+conky.config = {
+	alignment = 'top_right',
+	background = true,
+	cpu_avg_samples = 2,
+	default_color = 'FFFFFF',
+	double_buffer = true,
+	draw_shades = false,
+	font = 'Noto Mono:size=11:bold',
+	gap_x = 25,
+	gap_y = 25,
+	minimum_width = 300,
+	no_buffers = true,
+	own_window = true,
+	own_window_argb_value = 150,
+	own_window_argb_visual = true,
+	own_window_class = 'Conky',
+	own_window_colour = '#000000',
+	own_window_transparent = false,
+	own_window_hints = 'undecorated,below,above,sticky,skip_taskbar,skip_pager',
+	own_window_type = 'override',
+	update_interval = 1.0,
+	use_xft = true,
+	color1 = 'FE5E52',
+	color2 = 'eeeeee',
+	color3 = '0000ff',
+
+}
+conky.text = [[
+$alignr${color2}${font Noto Mono:size=18:bold}${time %A}${font}
+$alignr${color2}${font Noto Mono:size=16}${time %e} ${time %b} ${time %Y}${font}
+$hr
+#
+${voffset 5}${goto 20}${color2}${font Noto Mono:size=13:bold}CPU$alignr${color2}$cpu%${font}
+${voffset 0}${goto 40}${color2}${font Noto Mono:size=12:bold}${top name 1}$alignr${color1}${top cpu 1}%${font}
+${goto 40}$color2${font Noto Mono:size=11}${top name 2}$alignr${color1}${top cpu 2}%${font}
+${goto 40}$color2${font Noto Mono:size=11}${top name 3}$alignr${color1}${top cpu 3}%${font}
+${goto 40}$color2${font Noto Mono:size=11}${top name 4}$alignr${color1}${top cpu 4}%${font}
+${goto 40}$color2${font Noto Mono:size=11}${top name 5}$alignr${color1}${top cpu 5}%${font}
+#
+${voffset 10}${goto 20}${color2}${font Noto Mono:size=13:bold}RAM$alignr$mem${font}
+${goto 40}${voffset 0}${color2}${font Noto Mono:size=12:bold}${top_mem name 1}$alignr${color1}${top_mem mem_res 1}${font}
+${goto 40}$color2${font Noto Mono:size=11}${top_mem name 2}$alignr${color1}${top_mem mem_res 2}${font}
+${goto 40}$color2${font Noto Mono:size=11}${top_mem name 3}$alignr${color1}${top_mem mem_res 3}${font}
+${goto 40}$color2${font Noto Mono:size=11}${top_mem name 4}$alignr${color1}${top_mem mem_res 4}${font}
+${goto 40}$color2${font Noto Mono:size=11}${top_mem name 5}$alignr${color1}${top_mem mem_res 5}${font}
+#
+$hr
+#${color2}${alignr}${execi 1200 whoami}@${nodename}
+${color2}${font Noto Mono:size=12:bold}${alignr}Kernel: ${color2}${kernel}${font}
+${alignr}${color2}${font Noto Mono:size=12:bold}Uptime: ${color2}${uptime_short}${font}
+${voffset 0}$alignr$color${font Noto Mono:size=14:bold}${execi 5000 lsb_release -d | grep 'Descr'|awk {'print $2 " " $3" " $4" " $5'}}${font}
+]]
