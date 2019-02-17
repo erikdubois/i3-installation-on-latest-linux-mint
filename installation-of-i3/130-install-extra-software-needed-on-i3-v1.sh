@@ -67,7 +67,7 @@ sudo apt-get install -y lsb-release
 sudo apt-get install  -y pasystray  paprefs pavumeter pulseaudio-module-zeroconf
 
 # different terminal for nemo
-sudo apt-get install -y gnome-terminal nemo
+sudo apt-get install -y gnome-terminal nemo nemo-compare nemo-fileroller thunar
 
 # Cursor theme
 sudo apt-get install -y breeze-cursor-theme
