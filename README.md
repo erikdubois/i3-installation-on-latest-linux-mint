@@ -1,6 +1,6 @@
-# Installing i3 on Linux Mint 18.2 Cinnamon, Mate or Xfce
-Date    : 21/07/2017
-Version : v2.0.1
+# Installing i3 on Linux Mint Cinnamon, Mate or Xfce - always updated to the last version of Linux Mint
+Date    : 17/02/2019
+Version : v3.0.1
 
 # What is i3wm?
 
@@ -8,12 +8,12 @@ I3 = [improved tiling windows manager](https://i3wm.org/) and this is its base o
 You will find there a documentation guide every i3 user should read.
 
 
-## Installation of Linux Mint 18.2 Cinnamon, Mate or Xfce
+## Installation of Linux Mint Cinnamon, Mate or Xfce
 
 We start from an up-to-date and clean install of Linux Mint 18.2 Cinnamon, XFCE or MATE as described on
 http://erikdubois.be.
 
-The installation of 18.1 and 18.2 are identical.
+The installation of Linux Mint is easy and very similar to the old installations.
 
 Installation instructions for the [Installation of Linux Mint 18.1 Cinnamon](http://erikdubois.be/how-to-install-linux-mint-18-1-cinnamon-and-redesign-it/)
 
