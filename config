@@ -393,7 +393,7 @@ for_window [class="Spotify"] move to workspace 10
 
 #browser
 #exec --no-startup-id vivaldi-snapshot
-exec --no-startup-id chromium-browser
+#exec --no-startup-id chromium-browser
 #for_window [class="Vivaldi-snapshot"] focus
 #for_window [class="Chromium-browser"] focus
 
@@ -405,6 +405,9 @@ exec --no-startup-id atom
 #exec --no-startup-id thunar
 #exec thunar --daemon &
 exec --no-startup-id nemo
+
+#terminal
+exec --no-startup-id gnome-terminal
 
 
 #Mail clients
