@@ -42,7 +42,7 @@ Checkout the installation articles on http://erikdubois.be/category/linux/i3/ins
 # F  A  Q
 --------------------
 
-#What can you do if the script does not execute?
+# What can you do if the script does not execute?
 
 Since I sometimes forget to make the script executable, I include here what you can do to solve that.
 
@@ -67,7 +67,7 @@ Or you can follow these steps
 
 
 -------------------------------------------------
-#But that is the fun in Linux.
+# But that is the fun in Linux.
 
 You can do whatever <b>Y O U</b> want.
 
