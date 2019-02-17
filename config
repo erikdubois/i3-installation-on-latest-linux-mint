@@ -347,40 +347,40 @@ font pango:Noto Mono Regular 13
 # you can find the class with the program xprop
 
 # Workspace 1 browser related
-assign [class="Firefox|Vivaldi-stable|Vivaldi-snapshot|Opera"]                      → 1
-assign [class="Chromium-browser|Google-chrome"]                                     → 1
+#assign [class="Firefox|Vivaldi-stable|Vivaldi-snapshot|Opera"]                      → 1
+#assign [class="Chromium-browser|Google-chrome"]                                     → 1
 
 # Workspace 2 text editor related
-assign [class="sublime-text|sublime_text|Sublime_text|subl|Subl|subl3|Subl3"]       → 2
-assign [class="Xed|xed|Brackets|Atom|Code|Geany"]                                   → 2
+#assign [class="sublime-text|sublime_text|Sublime_text|subl|Subl|subl3|Subl3"]       → 2
+#assign [class="Xed|xed|Brackets|Atom|Code|Geany"]                                   → 2
 
 # Workspace 3 Inkscape
-assign [class="Inkscape"]                                                           → 3
+#assign [class="Inkscape"]                                                           → 3
 
 # Workspace 4 Gimp
-assign [class="Gimp"]                                                               → 4
+#assign [class="Gimp"]                                                               → 4
 
 # Workspace 5 Images and meld
-assign [class="ristretto|Ristretto|shotwell|Shotwell|Xviewer|Nitrogen"]             → 5
-assign [class="feh|gthumb|Gthumb|eog|Eog|Pinta|pixeluvo|Pixeluvo"]                  → 5
-assign [class="Meld"]                                                               → 5
+#assign [class="ristretto|Ristretto|shotwell|Shotwell|Xviewer|Nitrogen"]             → 5
+#assign [class="feh|gthumb|Gthumb|eog|Eog|Pinta|pixeluvo|Pixeluvo"]                  → 5
+#assign [class="Meld"]                                                               → 5
 
 # Workspace 6 all video related software
-assign [class="Vlc|vlc"]                                                            → 6
+#assign [class="Vlc|vlc"]                                                            → 6
 
 # Workspace 7 virtual machines and settings
-assign [class="Vmplayer|VirtualBox"]						                        → 7
+#assign [class="Vmplayer|VirtualBox"]						                        → 7
 
 # Workspace 8 file managers
-assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                                 → 8
+#assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                                 → 8
 
 # Workspace 9 email clients
-assign [class="Geary|Evolution"]                                                    → 9
+#assign [class="Geary|Evolution"]                                                    → 9
 
 # Workspace 10 music related
-assign [class="Spotify|spotify"]                                                    → 10
+#assign [class="Spotify|spotify"]                                                    → 10
 #fix for spotify not moving to workspace 10
-for_window [class="Spotify"] move to workspace 10
+#for_window [class="Spotify"] move to workspace 10
 
 
 
