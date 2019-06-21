@@ -24,7 +24,7 @@ echo "Checking presence of lsb-release and install it when missing"
 
 	if ! location="$(type -p "lsb_release")" || [ -z "lsb_release" ]; then
 
-		# check if apt-git is installed
+		# check if apt-get is installed
 		if which apt-get > /dev/null; then
 
 			sudo apt-get install -y lsb-release
