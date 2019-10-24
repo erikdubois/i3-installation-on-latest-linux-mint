@@ -11,12 +11,12 @@ echo "General software"
 echo "#########################################################"
 
 
-sudo apt install -y firefox
-sudo apt install -y gimp 
-sudo apt install -y inkscape 
-sudo apt install -y meld 
-sudo apt install -y vlc 
-sudo apt install -y evolution
+#sudo apt install -y firefox
+#sudo apt install -y gimp 
+#sudo apt install -y inkscape 
+#sudo apt install -y meld 
+#sudo apt install -y vlc 
+#sudo apt install -y evolution
 
 
 
@@ -34,7 +34,7 @@ sudo apt-get install -y dmenu
 sudo apt-get install -y conky-all
 
 # geany
-sudo apt-get install -y geany
+#sudo apt-get install -y geany
 
 # numerick lock on
 sudo apt-get install -y numlockx
@@ -44,7 +44,7 @@ numlockx on
 sudo apt-get install -y feh
 
 # change icons,themes and mouse
-sudo apt-get install -y lxappearance qt4-qtconfig
+sudo apt-get install -y lxappearance
 
 # take picture of screen
 sudo apt-get install -y scrot
@@ -53,7 +53,7 @@ sudo apt-get install -y scrot
 sudo apt-get install -y compton
 
 # notify demon
-sudo apt-get install -y notify-osd
+#sudo apt-get install -y notify-osd
 
 
 # get the mouse out of the way
@@ -64,16 +64,16 @@ sudo apt-get install -y lsb-release
 
 # panel icon for sound
 # sudo apt-get install -y volti
-sudo apt-get install  -y pasystray  paprefs pavumeter pulseaudio-module-zeroconf
+#sudo apt-get install  -y pasystray  paprefs pavumeter pulseaudio-module-zeroconf
 
 # different terminal for nemo
-sudo apt-get install -y gnome-terminal nemo nemo-compare nemo-fileroller thunar
+#sudo apt-get install -y gnome-terminal nemo nemo-compare nemo-fileroller thunar
 
 # Cursor theme
 sudo apt-get install -y breeze-cursor-theme
 
 # appfinder
-sudo apt-get install -y xfce4-appfinder
+#sudo apt-get install -y xfce4-appfinder
 
 # gmrun
 sudo apt-get install -y gmrun
@@ -82,23 +82,23 @@ sudo apt-get install -y gmrun
 sudo apt-get install -y rofi
 
 # screenshooters
-sudo apt-get install -y xfce4-screenshooter
-sudo apt-get install -y gnome-screenshot
+#sudo apt-get install -y xfce4-screenshooter
+#sudo apt-get install -y gnome-screenshot
 
 # nitrogen
 sudo apt-get install -y nitrogen
 
 # chromium
-sudo apt-get install -y chromium-browser
+#sudo apt-get install -y chromium-browser
 
 # neofetch
 sudo apt-get install -y neofetch
 
 # screenkey
-sudo apt-get install -y screenkey
+#sudo apt-get install -y screenkey
 
 # simplescreenrecorder
-sudo apt-get install -y simplescreenrecorder
+#sudo apt-get install -y simplescreenrecorder
 
 # sublime-text
 sudo apt-get install -y sublime-text
@@ -131,10 +131,6 @@ else
 	rm -rf /tmp/i3blocks
 
 fi
-
-
-
-
 
 echo
 echo
