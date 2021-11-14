@@ -44,7 +44,7 @@ sudo apt install -y lxappearance
 sudo apt install -y scrot
 
 # transparency of non active window
-sudo apt install -y picom
+sudo apt install -y compton
 
 # notify demon
 #sudo apt install -y notify-osd
