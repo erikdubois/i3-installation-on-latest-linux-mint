@@ -13,9 +13,9 @@ echo "dependencies for i3 with gaps"
 echo "#########################################"
 
 # script 110
-# sudo apt install -y autoconf
-# sudo apt install -y automake
-# sudo apt install -y build-essential
+sudo apt install -y autoconf
+sudo apt install -y automake
+sudo apt install -y build-essential
 # sudo apt install -y libtool
 # sudo apt install -y xutils-dev xcb libxcb-composite0-dev
 # sudo apt install -y doxygen

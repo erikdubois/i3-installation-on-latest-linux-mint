@@ -7,10 +7,22 @@ set -e
 #
 ##################################################################################################################
 
+if [ -d  $HOME"/.local/bin" ] ; then
+	echo ".local/bin exists"
+else 
+	mkdir ~/.local/bin
+fi
+
+if [ -d  "$HOME/.local/bin" ] ; then
+	export PATH="$HOME/.local/bin:$PATH"
+fi
+
 sudo apt install pip -y
 pip install autotiling
 
-echo "add .local/bin to the path"
+echo "adding .local/bin to the path"
+
+
 
 echo "#########################################################"
 echo "Settings have been copied"
