@@ -9,6 +9,7 @@ set -e
 
 sudo apt install thunar -y
 sudo apt install gnome-terminal -y
+sudo apt install picom -y
 
 echo "##################################################"
 echo "Latest possible version of i3 with gaps"
