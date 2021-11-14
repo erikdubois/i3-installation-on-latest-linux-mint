@@ -12,7 +12,8 @@
 ##################################################################################################################
 
 
-sudo apt-get install zsh git wget -y
+sudo apt install zsh git wget -y
+sudo apt install zsh-syntax-highlighting zsh-autosuggestions -y
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 
 # changing the theme to random so you can enjoy tons of themes.

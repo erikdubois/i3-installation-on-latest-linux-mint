@@ -13,23 +13,29 @@ echo "##################################################"
 
 # installing i3 gap
 
-rm -rf /tmp/Airblader
+# rm -rf /tmp/Airblader
 
-git clone https://github.com/Airblader/i3.git /tmp/Airblader
-cd /tmp/Airblader
+# git clone https://github.com/Airblader/i3.git /tmp/Airblader
+# cd /tmp/Airblader
 
-# compile & install
-autoreconf --force --install
-rm -rf build/
-mkdir -p build && cd build/
+# # compile & install
+# autoreconf --force --install
+# rm -rf build/
+# mkdir -p build && cd build/
 
-# Disabling sanitizers is important for release versions!
-# The prefix and sysconfdir are, obviously, dependent on the distribution.
-../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
+# # Disabling sanitizers is important for release versions!
+# # The prefix and sysconfdir are, obviously, dependent on the distribution.
+# ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
 
-make && sudo make install
+# make && sudo make install
 
-rm -rf /tmp/Airblader
+# rm -rf /tmp/Airblader
+
+
+sudo add-apt-repository ppa:regolith-linux/release
+sudo apt update
+sudo apt install i3-gaps
+
 
 echo "You installed the following version"
 echo
