@@ -43,9 +43,6 @@ sudo apt install -y lxappearance
 # take picture of screen
 sudo apt install -y scrot
 
-# transparency of non active window
-sudo apt install -y picom
-
 # notify demon
 #sudo apt install -y notify-osd
 
@@ -61,8 +58,7 @@ sudo apt install -y lsb-release
 #sudo apt install  -y pasystray  paprefs pavumeter pulseaudio-module-zeroconf
 
 # different terminal for nemo
-#sudo apt install -y gnome-terminal nemo nemo-compare nemo-fileroller thunar
-sudo apt install -y gnome-terminal
+#sudo apt install -y nemo nemo-compare nemo-fileroller thunar
 
 # Cursor theme
 sudo apt install -y breeze-cursor-theme

@@ -149,7 +149,7 @@ bindsym $mod+F11 exec --no-startup-id rofi -show run -fullscreen -font "Noto San
 # start rofi small
 bindsym $mod+F12 exec --no-startup-id rofi -show run -font "Noto Sans 13"
 
-
+bindsym F12 exec --no-startup-id xfce4-terminal --drop-down; focus
 
 #####################################################################################################################
 #################                          how to exit, logoff, suspend, ...                        #################
