@@ -21,7 +21,7 @@ sudo apt install pip -y
 pip install autotiling
 
 echo "adding .local/bin to the path"
-
+echo "do it manually if needed"
 
 
 echo "#########################################################"

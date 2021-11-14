@@ -16,7 +16,7 @@ sudo apt update
 sudo apt install i3-gaps thunar gnome-terminal
 
 echo "If the keys can come in you are fine else build it yourself"
-echo "else run 120b"
+echo "else run 120b - you need to install the dependencies from 100"
 echo
 echo
 echo "##################################################"
