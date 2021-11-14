@@ -7,18 +7,11 @@ set -e
 #
 ##################################################################################################################
 
-sh applications/install-atom-v*.sh
+sudo apt install pip -y
+pip install autotiling
 
-sh applications/install-google-chrome-v*.sh
-
-sh applications/install-spotify-v*.sh
-
-sh applications/install-vivaldi-snapshot-v*.sh
-
-#sh applications/install-zsh-v*.sh
-
+echo "add .local/bin to the path"
 
 echo "#########################################################"
-echo "Applications have been  installed"
+echo "Settings have been copied"
 echo "#########################################################"
-sleep 1

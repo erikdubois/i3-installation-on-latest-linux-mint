@@ -10,11 +10,11 @@ echo "#########################################################"
 echo "General software"
 echo "#########################################################"
 
-#sudo apt install -y firefox
-#sudo apt install -y gimp 
-#sudo apt install -y inkscape 
-#sudo apt install -y meld 
-#sudo apt install -y vlc 
+sudo apt install -y firefox
+sudo apt install -y gimp 
+sudo apt install -y inkscape 
+sudo apt install -y meld 
+sudo apt install -y vlc 
 #sudo apt install -y evolution
 
 echo "#########################################################"
@@ -62,6 +62,7 @@ sudo apt install -y lsb-release
 
 # different terminal for nemo
 #sudo apt install -y gnome-terminal nemo nemo-compare nemo-fileroller thunar
+sudo apt install -y gnome-terminal
 
 # Cursor theme
 sudo apt install -y breeze-cursor-theme
@@ -73,7 +74,7 @@ sudo apt install -y breeze-cursor-theme
 sudo apt install -y rofi
 
 # screenshooters
-#sudo apt install -y xfce4-screenshooter
+sudo apt install -y xfce4-screenshooter
 #sudo apt install -y gnome-screenshot
 
 # nitrogen
