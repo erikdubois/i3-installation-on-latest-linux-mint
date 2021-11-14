@@ -13,7 +13,7 @@ echo "##################################################"
 
 sudo add-apt-repository ppa:regolith-linux/release
 sudo apt update
-sudo apt install i3-gaps
+sudo apt install i3-gaps thunar gnome-terminal
 
 echo "If the keys can come in you are fine else build it yourself"
 echo "else run 120b"
